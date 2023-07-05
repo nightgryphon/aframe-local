@@ -16,8 +16,8 @@ var GAMEPAD_ID_WEBVR = 'Oculus Touch';
 var GAMEPAD_ID_PREFIX = isWebXRAvailable ? GAMEPAD_ID_WEBXR : GAMEPAD_ID_WEBVR;
 
 // First generation model URL.
-var TOUCH_CONTROLLER_MODEL_BASE_URL = 'https://cdn.aframe.io/controllers/oculus/oculus-touch-controller-';
-var META_CONTROLLER_MODEL_BASE_URL = 'https://cdn.aframe.io/controllers/meta/';
+var TOUCH_CONTROLLER_MODEL_BASE_URL = 'assets/controllers/oculus/oculus-touch-controller-';
+var META_CONTROLLER_MODEL_BASE_URL = 'assets/controllers/meta/';
 
 var OCULUS_TOUCH_WEBVR = {
   left: {
