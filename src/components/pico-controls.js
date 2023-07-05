@@ -11,7 +11,7 @@ var onButtonEvent = trackedControlsUtils.onButtonEvent;
 // https://github.com/immersive-web/webxr-input-profiles/tree/master/packages/registry
 // TODO: Add a more robust system for deriving gamepad name.
 var GAMEPAD_ID = 'pico-4';
-var PICO_MODEL_GLB_BASE_URL = 'https://cdn.aframe.io/controllers/pico/pico4/';
+var PICO_MODEL_GLB_BASE_URL = 'assets/controllers/pico/pico4/';
 
 /**
  * Button IDs:

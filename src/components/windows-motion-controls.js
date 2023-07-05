@@ -14,7 +14,7 @@ var warn = utils.debug('components:windows-motion-controls:warn');
 
 var DEFAULT_HANDEDNESS = require('../constants').DEFAULT_HANDEDNESS;
 
-var MODEL_BASE_URL = 'https://cdn.aframe.io/controllers/microsoft/';
+var MODEL_BASE_URL = 'assets/controllers/microsoft/';
 var MODEL_FILENAMES = { left: 'left.glb', right: 'right.glb', default: 'universal.glb' };
 
 var isWebXRAvailable = require('../utils/').device.isWebXRAvailable;

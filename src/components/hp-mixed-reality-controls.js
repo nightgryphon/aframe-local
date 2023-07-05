@@ -12,7 +12,7 @@ var onButtonEvent = trackedControlsUtils.onButtonEvent;
 // TODO: Add a more robust system for deriving gamepad name.
 var GAMEPAD_ID = 'hp-mixed-reality';
 
-var HP_MIXEDL_REALITY_MODEL_GLB_BASE_URL = 'https://cdn.aframe.io/controllers/hp/mixed-reality/';
+var HP_MIXEDL_REALITY_MODEL_GLB_BASE_URL = 'assets/controllers/hp/mixed-reality/';
 
 var HP_MIXED_REALITY_POSITION_OFFSET = {x: 0, y: 0, z: 0.06};
 var HP_MIXED_REALITY_ROTATION_OFFSET = {_x: Math.PI / 4, _y: 0, _z: 0, _order: 'XYZ'};
