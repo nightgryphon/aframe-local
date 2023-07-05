@@ -15,7 +15,7 @@ var VERTEX_SHADER_WEBGL1 = [
 ].join('\n');
 
 var VERTEX_SHADER_WEBGL2 = [
-  '#version 300 es',
+//  '#version 300 es',
   'in vec2 uv;',
   'in vec3 position;',
   'uniform mat4 projectionMatrix;',
@@ -74,7 +74,7 @@ var FRAGMENT_SHADER_WEBGL1 = [
 ].join('\n');
 
 var FRAGMENT_SHADER_WEBGL2 = [
-  '#version 300 es',
+//  '#version 300 es',
   'precision highp float;',
   'uniform bool negate;',
   'uniform float alphaTest;',
@@ -135,5 +135,7 @@ module.exports.Shader = registerShader('msdf', {
 
   vertexShader: VERTEX_SHADER,
 
-  fragmentShader: FRAGMENT_SHADER
+  fragmentShader: FRAGMENT_SHADER,
+  
+  glslVersion: isWebGL2AVailable ? '300 es' : null
 });
