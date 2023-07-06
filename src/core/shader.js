@@ -46,7 +46,7 @@ Shader.prototype = {
     '}',
 
   glslVersion: null,
-  
+
   /**
    * Init handler. Similar to attachedCallback.
    * Called during shader initialization and is only run once.
