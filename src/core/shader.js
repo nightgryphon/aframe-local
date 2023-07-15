@@ -52,9 +52,23 @@ Shader.prototype = {
   init: function (data) {
     this.attributes = this.initVariables(data, 'attribute');
     this.uniforms = this.initVariables(data, 'uniform');
+
+    // THREE r154 require '#version' as standalone value in glslVersion
+    var version = undefined;
+    for (var name of ['vertexShader', 'fragmentShader'] ) {
+	var Lines = this[name].split("\n");
+	var pos = Lines[0].indexOf('#version');
+
+	if (pos >= 0) {
+	    version = Lines.shift().substr(pos+9);
+	    this[name] = Lines.join("\n");
+	}
+    }
+
     this.material = new (this.raw ? THREE.RawShaderMaterial : THREE.ShaderMaterial)({
       // attributes: this.attributes,
       uniforms: this.uniforms,
+      glslVersion: version,
       vertexShader: this.vertexShader,
       fragmentShader: this.fragmentShader
     });
